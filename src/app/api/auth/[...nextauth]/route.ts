@@ -45,7 +45,7 @@ const authOptions: AuthOptions = {
       session.user = session.user || {}; 
 
       if (token?.sub) {
-        session.user.id = token.sub; 
+       
       }
       if (token?.email) {
         session.user.email = token.email; 
@@ -53,27 +53,5 @@ const authOptions: AuthOptions = {
       
       return session;
     },
-    async jwt({ token, user }: { 
-      token: JWT; 
-      user: Noted | undefined; 
-  
-    }) {
-      if (user) {
-        token.sub = user.id; 
-        token.email = user.email; // Add email to token if necessary
-      }
-      return token;
-    },
   },
 };
-
-// Export HTTP methods as named exports
-export async function POST(req: NextRequest) {
-  const res = await NextAuth(req : authOptions); // Pass req and authOptions
-  return res; // Return the response directly
-}
-
-export async function GET(req: NextRequest) {
-  const res = await NextAuth(req, authOptions); // Pass req and authOptions
-  return res; // Return the response directly
-}
