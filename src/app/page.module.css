@@ -1,0 +1,96 @@
+/* page.module.css */
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.subtitle {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formdis {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.formin {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formbutton {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.formbutton:hover {
+  background-color: #45a049;
+}
+
+.ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.li {
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.li span {
+  font-weight: bold;
+}
+
+.transaction-type-income {
+  color: #4caf50;
+}
+
+.transaction-type-expense {
+  color: #ff0000;
+}
+
+.financial-summary {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.financial-summary h2 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.chart-container {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
